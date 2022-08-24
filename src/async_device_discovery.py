@@ -8,6 +8,7 @@ async def main():
     async with Network() as network:
         print("Looking for the next best device...\n\t", end="")
         print(await network.wait_for_new_device(timeout_seconds=10))
+        # print(await network._request_info_and_put_new_device(10))
 
         print("---")
         print("All devices after searching for additional 5 seconds:")

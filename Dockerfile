@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-c"]
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y python3-pip python-xlib python3-xlib && \
     apt-get install -y python3.8-venv && \
-    apt-get install -y net-tools iputils-ping
+    apt-get install -y net-tools iputils-ping firefox
 
 # create python3 VENV
 ENV VIRTUAL_ENV=~/venv/py3
